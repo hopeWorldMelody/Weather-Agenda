@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Joan&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather Agenda</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Agenda</h1>
+      <h2 id="date"></h2>
+      <form id="search-form">
+        <input id="city-input" type="text" />
+        <input type="submit" value="Search" />
+        <button class="btn btn-success" id="current-location-button">Current</button>
+      </form>
+     
+      <div class="card text-bg-dark mb-3 text-center" style="max-width: 18rem">
+        <div id="city" class="card-header" ></div>
+        <div class="card-body">
+          <h5  class="card-title" ><span id="temperature"></span>°</h5>
+          <p  class="card-text">
+         <a href="#" id="fahrenheit-link">℉</a> | 
+         <a href="#" id="celsius-link">℃</a> </p>
+        <p id="description"></p>
+      
+          
+        </div>
+      </div>
+    
+        <table class="table table-dark table-striped text-center">
+  <thead>
+    <tr>
+      <th scope="col">Sunday</th>
+      <th scope="col">Monday</th>
+      <th scope="col">Tuesday</th>
+      <th scope="col">Wednesday</th>
+      <th scope="col">Thursday</th>
+      <th scope="col">Friday</th>
+      <th scope="col">Saturday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">90℉</th>
+      <td>89℉</td>
+      <td>89℉</td>
+      <td>90℉</td>
+      <td>90℉</td>
+      <td>90℉</td>
+      <td>91℉</td>
+    </tr>
+    <tr>
+      <th scope="row">☀️</th>
+      <td>☀️</td>
+      <td>🌥️</td>
+      <td>🍃</td>
+      <td>🌥️</td>
+      <td>☀️</td>
+      <td>☀️</td>
+    </tr>
+   
+  </tbody>
+</table>
+      </table>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+
+
+</html>
