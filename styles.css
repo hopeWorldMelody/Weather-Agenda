@@ -2,15 +2,15 @@ body {
   background-image: url(rainbow.jpeg);
   font-family: "Joan", serif;
 }
-}
+
 h1 {
   color: #e99566;
-  
+}
+
 .weather-app {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #e99566;
   border-radius: 10px;
-  
 }
