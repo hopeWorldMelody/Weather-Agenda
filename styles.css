@@ -8,6 +8,11 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  color: #b6e1e0;
+}
+
 .weather-app {
   max-width: 600px;
   margin: 30px auto;
