@@ -12,6 +12,9 @@ h2 {
   text-align: center;
   color: #b6e1e0;
 }
+form {
+  text-align: center;
+}
 
 .btn {
   display: block;
@@ -24,8 +27,4 @@ h2 {
   padding: 20px;
   border: 1px solid #e99566;
   border-radius: 10px;
-}
-.search {
-  display: block;
-  margin: 0 auto;
 }
