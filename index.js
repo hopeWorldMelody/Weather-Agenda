@@ -31,12 +31,12 @@ function displayForecast() {
           <tbody>
             <tr class="weather-forecast-temperatures">
               <th scope="row">90℉</th>
-              <td>89℉</td>
+            
               
             </tr>
             <tr class="weather-emoji">
               <th scope="row">☀️</th>
-              <td>☀️</td>
+              
   `;
 }
 
