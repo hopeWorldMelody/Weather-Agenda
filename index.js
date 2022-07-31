@@ -71,10 +71,9 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+  getForecast(repsonse.data.coord);
 }
-
-getForecast(repsonse.data.coord);
-
 function searchCity(city) {
   let apiKey = "ca22d51d74aaaabb4b526c388b80df3a";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
