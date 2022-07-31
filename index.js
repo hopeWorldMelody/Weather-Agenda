@@ -24,9 +24,11 @@ function formatDate(date) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  forecastHTML =
-    forecastHTML +
-    `
+  let days = ["Sat", "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
     <div class="col-2">
     <table
           class="table table-dark table-striped text-center">
@@ -49,33 +51,8 @@ function displayForecast() {
              </div>
              
   `;
-  forecastHTML =
-    forecastHTML +
-    `
-    
-    <div class="col-2">
-    <table
-          class="table table-dark table-striped text-center">
-    <thead>
-     <tr class="weather-forecast-date">
-              <th scope="col">Sunday</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="weather-forecast-temperatures">
-              <th scope="row">90℉</th>
-            
-              
-            </tr>
-            <tr class="weather-emoji">
-              <th scope="row">☀️</th>
-              </tbody>
-              </table>
-              </div>
-              
-              
-  `;
+  });
+
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
