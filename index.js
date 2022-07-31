@@ -23,10 +23,11 @@ function formatDate(date) {
 }
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<tr class="row">`;
+  let forecastHTML = "";
   forecastHTML =
     forecastHTML +
-    ` <tr class="weather-forecast-date">
+    `<thead>
+     <tr class="weather-forecast-date">
               <th scope="col">Sunday</th>
               
             </tr>
@@ -39,11 +40,13 @@ function displayForecast() {
             </tr>
             <tr class="weather-emoji">
               <th scope="row">☀️</th>
+              </tbody>
               
   `;
   forecastHTML =
     forecastHTML +
-    ` <tr class="weather-forecast-date">
+    `<thead>
+     <tr class="weather-forecast-date">
               <th scope="col">Sunday</th>
               
             </tr>
@@ -56,9 +59,10 @@ function displayForecast() {
             </tr>
             <tr class="weather-emoji">
               <th scope="row">☀️</th>
+              </tbody>
               
   `;
-  forecastHTML = forecastHTML + `</tr>`;
+
   forecastElement.innerHTML = forecastHTML;
 }
 
