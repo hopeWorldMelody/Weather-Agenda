@@ -21,6 +21,24 @@ function formatDate(date) {
 
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = ` <tr class="weather-forecast-date">
+              <th scope="col">Sunday</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="weather-forecast-temperatures">
+              <th scope="row">90℉</th>
+              <td>89℉</td>
+              
+            </tr>
+            <tr class="weather-emoji">
+              <th scope="row">☀️</th>
+              <td>☀️</td>
+  `;
+}
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -82,3 +100,4 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+displayForecast();
