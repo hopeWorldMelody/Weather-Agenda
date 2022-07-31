@@ -53,7 +53,7 @@ function displayForecast() {
     forecastHTML +
     `
     <div class="row">
-    <div class="col-4">
+    <div class="col-2">
     <table
           class="table table-dark table-striped text-center">
     <thead>
