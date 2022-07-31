@@ -47,7 +47,7 @@ function displayForecast() {
               </tbody>
              </table> 
              </div>
-              </div>
+             
   `;
   forecastHTML =
     forecastHTML +
