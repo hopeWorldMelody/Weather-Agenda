@@ -34,7 +34,7 @@ function displayForecast() {
           class="table table-dark table-striped text-center">
     <thead>
      <tr class="weather-forecast-date">
-              <th scope="col">Sunday</th>
+              <th scope="col">${day}</th>
               
             </tr>
           </thead>
