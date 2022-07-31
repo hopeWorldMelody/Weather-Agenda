@@ -44,7 +44,7 @@ function displayForecast() {
             <tr class="weather-emoji">
               <th scope="row">☀️</th>
               </tbody>
-              </table>
+              
               
   `;
   forecastHTML =
@@ -65,7 +65,7 @@ function displayForecast() {
             <tr class="weather-emoji">
               <th scope="row">☀️</th>
               </tbody>
-              </table>
+              
               
   `;
   forecastHTML = forecastHTML + `</table>`;
