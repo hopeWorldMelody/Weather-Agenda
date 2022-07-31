@@ -26,7 +26,9 @@ function displayForecast() {
   let forecastHTML = "";
   forecastHTML =
     forecastHTML +
-    `<thead>
+    `<table
+          class="table table-dark table-striped text-center"
+    <thead>
      <tr class="weather-forecast-date">
               <th scope="col">Sunday</th>
               
@@ -41,11 +43,14 @@ function displayForecast() {
             <tr class="weather-emoji">
               <th scope="row">☀️</th>
               </tbody>
+              </table>
               
   `;
   forecastHTML =
     forecastHTML +
-    `<thead>
+    `<table
+          class="table table-dark table-striped text-center"
+    <thead>
      <tr class="weather-forecast-date">
               <th scope="col">Sunday</th>
               
@@ -60,6 +65,7 @@ function displayForecast() {
             <tr class="weather-emoji">
               <th scope="row">☀️</th>
               </tbody>
+              </table>
               
   `;
 
