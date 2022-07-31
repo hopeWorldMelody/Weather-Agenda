@@ -23,9 +23,9 @@ function formatDate(date) {
 }
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
-  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+  let forecast = response.data.daily;
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
@@ -34,18 +34,18 @@ function displayForecast(response) {
           class="table table-dark table-striped text-center">
     <thead>
      <tr class="weather-forecast-date">
-              <th scope="col">${day}</th>
+              <th scope="col">${forecastDay.dt}</th>
               
             </tr>
           </thead>
           <tbody>
             <tr class="weather-forecast-temperatures">
-              <th scope="row">90℉</th>
+              <th scope="row">${forecastDay.temp.max}℉</th>
             
               
             </tr>
             <tr class="weather-emoji">
-              <th scope="row">☀️</th>
+              <th scope="row">${forecast.weather[0].icon}</th>
               </tbody>
              </table> 
              </div>
