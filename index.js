@@ -51,6 +51,7 @@ function displayForecast() {
   forecastHTML =
     forecastHTML +
     `
+    <div class="row">
     <table
           class="table table-dark table-striped text-center">
     <thead>
@@ -69,10 +70,9 @@ function displayForecast() {
               <th scope="row">☀️</th>
               </tbody>
               </table>
-              
+              </div>
               
   `;
-  forecastHTML = forecastHTML + `</table>`;
   forecastElement.innerHTML = forecastHTML;
 }
 
