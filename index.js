@@ -37,10 +37,9 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
-    }
-    forecastHTML =
-      forecastHTML +
-      `
+      forecastHTML =
+        forecastHTML +
+        `
     <div class="col-2">
     <table
           class="table table-dark table-striped text-center">
@@ -52,7 +51,9 @@ function displayForecast(response) {
           </thead>
           <tbody>
             <tr class="weather-forecast-temperatures">
-              <th scope="row">${Math.round(forecastDay.temp.max)}℉</th>
+              <th scope="row" class="weather-forecast-temperature-max">${Math.round(
+                forecastDay.temp.max
+              )}℉</th>
             
               
             </tr>
@@ -67,8 +68,10 @@ function displayForecast(response) {
               </tbody>
              </table> 
              </div>
+             </div>
              
   `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
