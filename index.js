@@ -104,7 +104,7 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  getForecast(repsonse.data.coord);
+  getForecast(response.data.coord);
 }
 function search(city) {
   let apiKey = "ca22d51d74aaaabb4b526c388b80df3a";
