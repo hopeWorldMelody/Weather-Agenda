@@ -27,47 +27,49 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Weather Agenda</h1>
-        <h2 id="date"></h2>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <h1>Weather Agenda</h1>
+          <h2 id="date"></h2>
 
-        <br />
+          <br />
 
-        <form id="search-form">
-          <input id="city-input" type="text" />
-          <input type="submit" value="Search" />
-        </form>
-        <button class="btn btn-dark" id="current-location-button">
-          Current Location
-        </button>
+          <form id="search-form">
+            <input id="city-input" type="text" />
+            <input type="submit" value="Search" />
+          </form>
+          <button class="btn btn-dark" id="current-location-button">
+            Current Location
+          </button>
 
-        <br />
+          <br />
 
-        <div
-          class="card text-bg-dark mb-3 text-center"
-          style="max-width: 18rem"
-        >
-          <div id="city" class="card-header"></div>
-          <div class="card-body">
-            <h5 class="card-title"><span id="temperature"></span>°</h5>
-            <p class="card-text">
-              <a href="#" id="fahrenheit-link" class="active">℉</a> |
-              <a href="#" id="celsius-link">℃</a>
-            </p>
-            <p id="description"></p>
+          <div
+            class="card text-bg-dark mb-3 text-center"
+            style="max-width: 18rem"
+          >
+            <div id="city" class="card-header"></div>
+            <div class="card-body">
+              <h5 class="card-title"><span id="temperature"></span>°</h5>
+              <p class="card-text">
+                <a href="#" id="fahrenheit-link" class="active">℉</a> |
+                <a href="#" id="celsius-link">℃</a>
+              </p>
+              <p id="description"></p>
+            </div>
           </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-        <div class="weather-forecast" id="forecast"></div>
-      </div>
 
-      <small>
-        <a
-          href="https://github.com/hopeWorldMelody/Weather-Agenda"
-          target="_blank"
-          >Open-Source Code</a
-        >
-        by Melody Colyer
-      </small>
+        <small>
+          <a
+            href="https://github.com/hopeWorldMelody/Weather-Agenda"
+            target="_blank"
+            >Open-Source Code</a
+          >
+          by Melody Colyer
+        </small>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
