@@ -88,6 +88,7 @@ small {
   text-align: center;
 
   color: rgb(33, 33, 33);
+  padding-top: 10px;
 }
 
 .weather-forecast-date {
