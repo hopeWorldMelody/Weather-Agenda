@@ -84,7 +84,7 @@ small {
 }
 
 .weather-forecast strong {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
 
   color: rgb(33, 33, 33);
@@ -93,7 +93,7 @@ small {
 .weather-forecast-date strong {
   font-size: 20px;
   opacity: 0.3;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .weather-forecast-temperature-min {
