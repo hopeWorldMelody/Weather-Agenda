@@ -29,9 +29,7 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
-.container {
-  background-image: url(images/rainbow.jpeg);
-}
+
 
 .weather-app-wrapper {
   max-width: 600px;
