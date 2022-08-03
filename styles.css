@@ -84,7 +84,7 @@ small {
   text-decoration: none;
 }
 
-.weather-forecast {
+.weather-forecast strong {
   margin-top: 20px;
   text-align: center;
 
