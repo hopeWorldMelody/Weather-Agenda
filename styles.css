@@ -30,7 +30,7 @@ li:first-letter {
   text-transform: capitalize;
 }
 .container {
-  background-image: no-repeat url(rainbow.jpeg);
+  background: url(rainbow.jpeg);
   background-size: contain;
 }
 
