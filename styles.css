@@ -84,10 +84,10 @@ small {
 }
 
 .weather-forecast strong {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 
-  color: #000;
+  color: rgb(33, 33, 33);
 }
 
 .weather-forecast-date {
