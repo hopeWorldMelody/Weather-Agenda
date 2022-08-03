@@ -84,15 +84,14 @@ small {
 }
 
 .weather-forecast strong {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 
   color: rgb(33, 33, 33);
-  padding-top: 15px;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 20px;
   opacity: 0.5;
 }
 
