@@ -33,6 +33,7 @@ li:first-letter {
   background-image: url(rainbow.jpeg);
   background-size: auto auto;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .weather-app-wrapper {
