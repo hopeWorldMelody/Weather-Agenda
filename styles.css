@@ -31,6 +31,7 @@ li:first-letter {
 }
 .container {
   background-image: url(rainbow.jpeg);
+  background-size: contain;
 }
 
 .weather-app-wrapper {
