@@ -29,34 +29,48 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1>Weather Agenda</h1>
-          <h2 id="date"></h2>
-
-          <br />
-
-          <form id="search-form">
-            <input id="city-input" type="text" />
-            <input type="submit" value="Search" />
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
           </form>
-          <button class="btn btn-dark" id="current-location-button">
-            Current Location
-          </button>
-
-          <br />
-
-          <div
-            class="card text-bg-dark mb-3 text-center"
-            style="max-width: 18rem"
-          >
-            <div id="city" class="card-header"></div>
-            <div class="card-body">
-              <h5 class="card-title"><span id="temperature"></span>°</h5>
-              <p class="card-text">
-                <a href="#" id="fahrenheit-link" class="active">℉</a> |
-                <a href="#" id="celsius-link">℃</a>
-              </p>
-              <div id="humidity">% Humidity</div>
-              <p id="description"></p>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"> °C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+              </ul>
             </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
