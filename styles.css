@@ -31,7 +31,8 @@ li:first-letter {
 }
 .container {
   background-image: url(rainbow.jpeg);
-  background-size: 900px;
+  background-size: auto auto;
+  padding-top: 20px;
 }
 
 .weather-app-wrapper {
